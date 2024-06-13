@@ -34,7 +34,7 @@
             exit();
         }
 
-        $user_id = $_SESSION['user_id']; // Pastikan user_id disimpan dalam session
+        $user_id = $_SESSION['user_id']; 
 
         $judul_berita = '';
         $isi_berita = '';
@@ -42,7 +42,7 @@
 
         if (isset($_GET['id'])) {
             $berita_id = $_GET['id'];
-            // Ambil data berita yang akan diedit
+            
             $sql = "SELECT * FROM tb_berita WHERE id = $berita_id AND user_id = $user_id";
             $result = $koneksi->query($sql);
 
@@ -64,7 +64,7 @@
         <form method="post" action="update.php" enctype="multipart/form-data">
             <input type="hidden" name="action" value="edit">
             <input type="hidden" name="berita_id" value="<?php echo $berita_id; ?>">
-            <div class="mx-auto w-3/4"> <!-- Mengatur lebar 70% dari parent dan posisi tengah -->
+            <div class="mx-auto w-3/4"> 
                 <div class="mb-4">
                     <label for="judul_berita" class="block text-gray-700 text-sm font-bold mb-2">Judul Berita</label>
                     <input type="text" name="judul_berita" id="judul_berita" value="<?php echo htmlspecialchars($judul_berita); ?>" placeholder="Masukkan judul berita" class="appearance-none block w-full px-3 py-2 border border-black-300 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent sm:text-sm">
