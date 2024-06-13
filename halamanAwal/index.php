@@ -29,11 +29,11 @@ $result_all = $stmt_all->get_result();
 <nav class="bg-red-700 p-4">
     <div class="container mx-auto flex justify-between items-center">
         <div class="text-white font-bold text-xl">
-            <a href="../HalamanAkun/account.php">GNews</a>
+            <a href="../HalamanAwal/index.php">GNews</a>
         </div>
         <div>
             <?php if (isset($_SESSION['user_id'])): ?>
-                <a href="../HalamanAkun/akun.php" class="text-gray-300 hover:text-white px-3">Dashboard</a>
+                <a href="../HalamanAkun/akun.php" class="text-gray-300 hover:text-white px-3">Profile</a>
             <?php else: ?>
                 <a href="../account/log.php" class="text-gray-300 hover:text-white px-3">Login</a>
                 <a href="../account/regis.php" class="text-gray-300 hover:text-white px-3">Register</a>

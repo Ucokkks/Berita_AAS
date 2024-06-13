@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-    <!-- Navbar -->
+<body class="bg-gray-100" style="font-family: 'Poppins', sans-serif;">
+    
     <nav class="bg-red-700 p-4">
         <div class="container mx-auto flex justify-between items-center">
             <div class="text-white font-bold text-xl">
-                <a href="../HalamanAkun/account.php">GNews</a>
+                <a href="../HalamanAwal/index.php">GNews</a>
             </div>
-            <div>
-                <a href="../HalamanAwal/index.php" class="text-gray-300 hover:text-white px-3 py-2 rounded-md">Home</a>
-            </div>
+
         </div>
     </nav>
 
-    <!-- Main Content -->
+    
     <div class="flex justify-center items-center min-h-screen">
         <div class="w-full max-w-md p-8 rounded-lg shadow-lg bg-white">
             <form action="auten.php" method="post" class="flex flex-col space-y-6">

@@ -29,11 +29,10 @@ $result = $stmt->get_result();
 <nav class="bg-red-700 p-4">
     <div class="container mx-auto flex justify-between items-center">
         <div class="text-white font-bold text-xl">
-            <a href="../HalamanAkun/account.php">GNews</a>
+            <a href="../HalamanAwal/index.php">GNews</a>
         </div>
         <div>
             <?php if (isset($_SESSION['username'])): ?>
-                <a href="../HalamanAwal/index.php" class="text-gray-300 hover:text-white px-3">Home</a>
                 <form action="../account/auten.php" method="post" style="display: inline-block;">
                     <input type="hidden" name="action" value="logout">
                     <button type="submit" class="text-gray-300 hover:text-white px-3">Logout</button>

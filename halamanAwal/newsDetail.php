@@ -38,12 +38,10 @@ $koneksi->close();
 <nav class="bg-red-700 p-4">
     <div class="container mx-auto flex justify-between items-center">
         <div class="text-white font-bold text-xl">
-            <a href="../HalamanAkun/account.php">GNews</a>
+            <a href="../HalamanAwal/index.php">GNews</a>
         </div>
-        <div>
-            <a href="../HalamanAwal/index.php" class="text-gray-300 hover:text-white px-3 py-2 rounded-md">Home</a>
-        </div>
-    </div>
+
+         
 </nav>
 
 
@@ -55,7 +53,7 @@ $koneksi->close();
         <img src='<?= htmlspecialchars($row['gambar']) ?>' width='400' class="w-full max-w-xs mx-auto ml-1">
     </p>
     <p class="mb-4 whitespace-pre-line"><?= nl2br(htmlspecialchars($row['isi'])) ?></p>
-    <a href='index.php' class="text-blue-500 hover:underline">Kembali ke Beranda</a>
+    
 </div>
 </body>
 </html>
