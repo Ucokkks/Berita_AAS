@@ -2,13 +2,13 @@
 session_start();
 include "../Controller/controller.php";
 
-// Ambil satu berita terpopuler secara acak untuk ditampilkan
+
 $sql_popular = "SELECT id, judul, gambar, tanggal_pembuatan, isi FROM tb_berita ORDER BY RAND() LIMIT 1";
 $stmt_popular = $koneksi->prepare($sql_popular);
 $stmt_popular->execute();
 $result_popular = $stmt_popular->get_result();
 
-// Ambil semua berita untuk ditampilkan
+
 $sql_all = "SELECT id, judul, gambar, tanggal_pembuatan FROM tb_berita";
 $stmt_all = $koneksi->prepare($sql_all);
 $stmt_all->execute();
