@@ -49,6 +49,10 @@
                     class="px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-gray-600">
             </div>
 
+            <div class="flex justify-between items-center">
+                <a href="log.php" class="text-blue-600 hover:underline">Sudah Punya Akun? Login</a>
+            </div>
+
             <button type="submit" name="action" value="regis"
                 class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md self-end">
                 Register

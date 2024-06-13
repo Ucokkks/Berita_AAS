@@ -48,10 +48,14 @@ $koneksi->close();
 
 
 
-    <h2><?= htmlspecialchars($row['judul']) ?></h2>
-    <p><img src='<?= htmlspecialchars($row['gambar']) ?>' width='300'></p>
-    <p><?= nl2br(htmlspecialchars($row['isi'])) ?></p>
-    <p>Tanggal: <?= htmlspecialchars($row['tanggal_pembuatan']) ?> WIB</p>
-    <a href='index.php'>Kembali ke Beranda</a>
+<div class="max-w-3xl mx-auto p-4 mt-16 ml-16">
+    <h2 class="text-2xl font-bold mb-4"><?= htmlspecialchars($row['judul']) ?></h2>
+    <p class="text-xs text-gray-600 mb-4">Tanggal: <?= htmlspecialchars($row['tanggal_pembuatan']) ?> WIB</p>
+    <p class="mb-4">
+        <img src='<?= htmlspecialchars($row['gambar']) ?>' width='400' class="w-full max-w-xs mx-auto ml-1">
+    </p>
+    <p class="mb-4 whitespace-pre-line"><?= nl2br(htmlspecialchars($row['isi'])) ?></p>
+    <a href='index.php' class="text-blue-500 hover:underline">Kembali ke Beranda</a>
+</div>
 </body>
 </html>

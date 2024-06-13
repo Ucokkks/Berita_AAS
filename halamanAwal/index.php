@@ -34,10 +34,6 @@ $result_all = $stmt_all->get_result();
         <div>
             <?php if (isset($_SESSION['user_id'])): ?>
                 <a href="../HalamanAkun/akun.php" class="text-gray-300 hover:text-white px-3">Dashboard</a>
-                <form action="../account/auten.php" method="post" style="display: inline-block;">
-                    <input type="hidden" name="action" value="logout">
-                    <button type="submit" class="text-gray-300 hover:text-white px-3">Logout</button>
-                </form>
             <?php else: ?>
                 <a href="../account/log.php" class="text-gray-300 hover:text-white px-3">Login</a>
                 <a href="../account/regis.php" class="text-gray-300 hover:text-white px-3">Register</a>

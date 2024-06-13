@@ -15,7 +15,7 @@
             </div>
             <div>
                 <?php if (!isset($_SESSION['user_id'])): ?>
-                    <a href="../HalamanAwal/index.php" class="text-gray-300 hover:text-white px-3">Home</a>
+                    <a href="../HalamanAkun/akun.php" class="text-gray-300 hover:text-white px-3">Dashboard</a>
                 <?php else: ?>
                     <a href="../account/log.php" class="text-gray-300 hover:text-white px-3">Login</a>
                     <a href="../account/regis.php" class="text-gray-300 hover:text-white px-3">Register</a>
